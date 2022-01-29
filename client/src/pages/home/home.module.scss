@@ -1,0 +1,51 @@
+@import "src/variables";
+
+.root{
+  margin-top: 90px;
+}
+.banner{
+  background-color: $primaryColor;
+  display: flex;
+  align-items: center;
+}
+.title{
+  color: $titleColor;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: LoveYaLikeASister;
+}
+.desc{
+  color: $titleColor;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.image{
+  width: 500px;
+  margin: 50px 50px 50px 0;
+}
+.btn{
+  border: 1px solid $titleColor;
+  margin: 20px 0;
+  font-size: 18px;
+  box-shadow: $boxShadow;
+  &:hover{
+    background-color: black;
+    color: $primaryColor;
+  }
+}
+.carousel{
+  margin: 70px 0;
+  :global{
+    .swiper-wrapper{
+      margin: 20px 0;
+    }
+  }
+}
+.section{
+  color: $titleColor;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}

@@ -1,0 +1,87 @@
+@import "src/variables";
+
+.root {
+  padding-top: 130px;
+  background: $lightBackground;
+}
+
+.mainTitle {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+.filters {
+  margin-top: 20px;
+  margin-right: 65px;
+  @media only screen and (max-width: $largerDisplay) {
+    margin-right: 40px;
+  }
+  @media only screen and (max-width: $largeDisplay) {
+    margin-right: 65px;
+  }
+}
+
+.filter {
+  color: $titleColor;
+  font-size: 18px;
+  margin-bottom: 15px;
+
+}
+
+.active {
+  font-weight: bold;
+}
+
+.menu {
+
+}
+
+.cover {
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.count {
+  font-size: 16px;
+  margin-right: 40px;
+  color: $titleColor;
+}
+
+.select {
+  width: 220px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+  @media only screen and (max-width: $largeDisplay) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  @media only screen and (max-width: $smallDisplay) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0 40px;
+  @media only screen and (max-width: $mediumDisplay) {
+    justify-content: space-between;
+  }
+}

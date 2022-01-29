@@ -1,0 +1,161 @@
+@import "src/variables";
+
+.root {
+  padding-top: 130px;
+  min-height: 100vh;
+  background: $lightBackground;
+}
+
+.form {
+  //display: flex;
+  justify-content: space-between;
+}
+
+.mainTitle, .ingredientTitle {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ingredientTitle {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.toppings, .order {
+  box-shadow: $boxShadow;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+.toppings, .orderWrapper {
+  width: calc(50% - 30px);
+  display: inline-block;
+  vertical-align: top;
+
+}
+
+.toppings {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.sizes {
+  display: flex;
+  margin-top: 20px;
+}
+
+.size {
+  width: 50%;
+  margin-right: 15px;
+  background-color: $lightBackground;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $titleColor;
+  font-weight: bold;
+  border: 1px solid $titleColor;
+  white-space: nowrap;
+  @media only screen and (max-width: $largerDisplay) {
+    padding: 10px 15px;
+  }
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.active {
+  background-color: $primaryColor;
+  color: $titleColor;
+  border: none;
+}
+
+.title {
+  font-size: 30px;
+  color: $titleColor;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid $lightColor;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.arrowLeft {
+  margin-right: 10px;
+  height: 25px;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.ingredient, .orderItem, .dough {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: $titleColor;
+  font-size: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.dough {
+  border-top: 1px dashed $lightColor;
+  color: $textColor;
+  margin-top: 20px;
+  padding-top: 15px;
+  font-size: 16px;
+}
+
+.add {
+  margin: 30px 0 0 auto;
+  font-size: 18px;
+}
+
+.noItems {
+  color: $textColor;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+}
+
+.total {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-weight: bold;
+  color: $titleColor
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ingredientWrapper {
+  text-align: center;
+  margin-right: 35px;
+  padding-top: 35px;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+}
+

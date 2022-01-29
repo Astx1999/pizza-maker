@@ -1,0 +1,158 @@
+@import "src/variables";
+.root{
+  box-shadow: $boxShadow;
+  border-radius: 25px;
+  padding: 0 30px 30px;
+  background-color: #fff;
+  @media only screen and (max-width: $largerDisplay) {
+    padding: 0 25px 25px;
+  }
+  @media only screen and (max-width: $largeDisplay) {
+    padding: 0 30px 30px;
+  }
+  @media only screen and (max-width: $mediumDisplay) {
+    padding: 0 20px 20px;
+  }
+}
+.image{
+  width: 100%;
+  img{
+    object-fit: contain;
+    width: 100%;
+  }
+}
+.name{
+  color: $titleColor;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 16px;
+  }
+}
+.ingredients{
+  color: $textColor;
+  font-size: 16px;
+  margin-bottom: 15px;
+  min-height: 80px;
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 14px;
+    min-height: 60px;
+  }
+}
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.sizes{
+  display: flex;
+  width: 100%;
+}
+.size{
+  width: 50%;
+  margin-right: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: $titleColor;
+  font-weight: bold;
+  border: 1px solid $titleColor;
+  white-space: nowrap;
+  @media only screen and (max-width: $largerDisplay) {
+    padding: 10px 15px;
+  }
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 10px;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+}
+.active {
+  background-color: $primaryColor;
+  color: $titleColor;
+  border: none;
+}
+.counter{
+  display: flex;
+  align-items: center;
+}
+.minus{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  svg{
+    width: 100%;
+  }
+}
+.plus{
+  width: 18px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+}
+.number{
+  min-width: 40px;
+  text-align: center;
+  color: $primaryColor;
+  font-size: 20px;
+  font-weight: bold;
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 16px;
+  }
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.price{
+  width: 50px;
+  margin-top: 10px;
+  color: $titleColor;
+  font-weight: bold;
+  font-size: 20px;
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: $mediumDisplay) {
+    font-size: 16px;
+  }
+}
+.currency{
+  font-weight: normal;
+  display: block;
+  color: $textColor;
+  font-size: 14px;
+  @media only screen and (max-width: $mediumDisplay) {
+    font-size: 12px;
+  }
+}
+.add{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  @media only screen and (max-width: $largerDisplay) {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 16px;
+    padding: 15px 30px;
+  }
+  @media only screen and (max-width: $mediumDisplay) {
+    font-size: 14px;
+  }
+}

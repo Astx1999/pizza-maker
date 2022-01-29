@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LoveYaLikeASister';
+  src: local('LoveYaLikeASister'), url('./fonts/LoveYaLikeASister.woff2') format('woff2');
+  src: local('LoveYaLikeASister'), url('./fonts/LoveYaLikeASister.woff') format('woff');
+  src: local('LoveYaLikeASister'), url('./fonts/LoveYaLikeASister-Regular.ttf') format('truetype');
+}
+
+
+body {
+  font-family: 'Open Sans', -apple-system,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Open Sans', -apple-system,
+  sans-serif;
+}

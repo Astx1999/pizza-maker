@@ -1,0 +1,46 @@
+@import "src/variables";
+
+.root {
+  padding-top: 130px;
+  background: $lightBackground;
+  min-height: 100vh;
+}
+
+.mainTitle {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 30px;
+}
+
+.content {
+  width: 60%;
+  margin: auto;
+}
+
+.text {
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.7;
+  color: $titleColor;
+}
+
+.images {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.image {
+  width: 30%;
+  height: auto;
+}
+
+.aboutImage {
+  margin-left: 5px;
+  width: 70%;
+  height: auto;
+}

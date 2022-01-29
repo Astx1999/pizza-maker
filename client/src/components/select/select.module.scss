@@ -1,0 +1,20 @@
+@import 'src/variables';
+.root{
+    width: 100%;
+}
+.error{
+    color: $errorColor;
+    font-size: 11px;
+}
+.selectedText{
+    padding-left: 10px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    padding-right: 25px;
+    position: relative;
+}
+.label{
+    padding-left: 10px;
+}
+

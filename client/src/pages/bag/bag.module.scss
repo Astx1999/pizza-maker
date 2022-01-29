@@ -1,0 +1,164 @@
+@import "src/variables";
+
+.root {
+  padding-top: 140px;
+  background: $lightBackground;
+  min-height: 100vh;
+}
+
+.mainTitle {
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+
+.back {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+
+  svg {
+    width: 15px;
+    transform: rotate(90deg);
+    margin-right: 5px;
+  }
+}
+
+.title {
+  font-size: 30px;
+}
+
+.tableHead {
+  display: flex;
+  color: #b0b0b0;
+  margin-bottom: 30px;
+
+  .headTitle {
+    display: block;
+
+    &:first-child {
+      width: 60%;
+    }
+
+    &:nth-child(2) {
+      width: 20%;
+    }
+
+    &:nth-child(3) {
+      width: 15%;
+    }
+  }
+}
+
+.items {
+  width: 65%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.item {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 30px;
+}
+
+.info {
+  display: flex;
+  width: 60%;
+}
+
+.image {
+  width: 200px;
+  margin-left: -20px;
+}
+
+.name {
+  font-size: 25px;
+  color: $titleColor;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.ingredients {
+  font-size: 18px;
+  width: 280px;
+  color: $textColor;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  width: 20%;
+}
+
+.minus, .plus {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 1px solid #e3e3e3;
+  cursor: pointer;
+
+  &::selection {
+    background-color: transparent;
+  }
+}
+
+.count {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  width: 15%;
+}
+
+.remove {
+  display: flex;
+  align-items: center;
+  width: 5%;
+  justify-content: flex-end;
+  cursor: pointer;
+  svg {
+    width: 20px;
+    height: 20px;
+
+    rect {
+      fill: $titleColor;
+    }
+  }
+}
+
+.total {
+  width: calc(35% - 60px);
+  margin-left: 60px;
+  padding: 20px 20px 10px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.lineTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 22px;
+}
