@@ -104,7 +104,8 @@
   width: 20%;
 }
 
-.minus, .plus {
+.minus,
+.plus {
   width: 30px;
   height: 30px;
   display: flex;
@@ -124,6 +125,9 @@
   margin: 0 10px;
   font-weight: bold;
   color: $titleColor;
+  &::selection {
+    background-color: transparent;
+  }
 }
 
 .price {
@@ -133,6 +137,9 @@
   font-weight: bold;
   width: 15%;
   color: $titleColor;
+  &::selection {
+    background-color: transparent;
+  }
 }
 
 .remove {
@@ -189,4 +196,9 @@
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 25px;
+}
+.noItems {
+  color: #b0b0b0;
+  text-align: center;
+  margin: 40px 0;
 }

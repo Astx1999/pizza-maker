@@ -4,6 +4,8 @@ import React, { useEffect, useState } from "react";
 import { getAllProducts } from "../../api/products";
 import { ReactComponent as Arrow } from "../../images/down-arrow.svg";
 import { ReactComponent as Cross } from "../../images/closeMenu.svg";
+import { ReactComponent as Plus } from "../../images/plus.svg";
+import { ReactComponent as Minus } from "../../images/minus.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { bagItemsSelector, bagTotalSelector } from "../../state/selectors";
 import Button from "../../components/button/button";
@@ -43,7 +45,7 @@ const Bag = () => {
               <span className={styles.headTitle}> Quantity </span>
               <span className={styles.headTitle}> Price </span>
             </div>
-            {bagItems &&
+            {bagItems.length ? (
               bagItems.map((item, index) => (
                 <div key={index} className={styles.item}>
                   <div className={styles.info}>
@@ -64,7 +66,7 @@ const Bag = () => {
                         dispatch(minusItemAC(item.id));
                       }}
                     >
-                      -
+                      <Minus />
                     </div>
                     <div className={styles.count}> {item.count}</div>
                     <div
@@ -73,7 +75,7 @@ const Bag = () => {
                         dispatch(plusItemAC(item.id));
                       }}
                     >
-                      +
+                      <Plus />
                     </div>
                   </div>
                   <p className={styles.price}>{item.price} AMD</p>
@@ -86,7 +88,10 @@ const Bag = () => {
                     <Cross />
                   </div>
                 </div>
-              ))}
+              ))
+            ) : (
+              <p className={styles.noItems}>No items found</p>
+            )}
           </div>
 
           <div className={styles.total}>
@@ -133,7 +138,7 @@ const Bag = () => {
               <span>Total:</span>
               <span>{total ? total + 600 : total} AMD</span>
             </div>
-            <Button full disable={!deliveryType}>
+            <Button full disable={!deliveryType || !bagItems.length}>
               Proceed to checkout
             </Button>
           </div>

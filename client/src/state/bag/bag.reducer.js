@@ -16,7 +16,6 @@ const BagReducer = (state = initialState, action) => {
       };
     }
     case ADD_TO_BAG: {
-      console.log(state);
       let issetInState = false;
       let newItems = state.items.map((item) => {
         if (item.id === action.newItem.id) {
