@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+
   & * {
     pointer-events: none;
   }
@@ -43,7 +44,7 @@
   }
 
   & > input:checked ~ .checkboxIndicator {
-    background-color: black;
+    background-color: $primaryColor;
   }
 
   & > input:checked ~ .checkboxIndicator::after {
@@ -82,9 +83,9 @@
 
 .checkboxLabel {
   font-weight: bold;
-  font-size: 22px ;
+  font-size: 22px;
 
   @media only screen and (max-width: $smallDisplay) {
-    font-size: 18px ;
+    font-size: 18px;
   }
 }

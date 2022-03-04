@@ -1,100 +1,118 @@
 @import 'src/variables';
+
 .wrapper {
-    display: flex;
+  display: flex;
 }
 
 button:disabled {
-    cursor: default !important;
+  cursor: default !important;
+  background-color: #c9c9c9;
+  color: #8b8b8b;
 }
+
 .primary,
 .secondary,
-.white{
-    font-size: 16px;
-    padding: 15px 30px;
-    margin: 0;
-    min-height: 50px;
-    color: #fff;
-    text-decoration: none;
-    white-space: nowrap;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    position: relative;
-    border-radius: 15px;
-    @media only screen and (max-width: $largeDisplay) {
-        font-size: 18px;
-    }
-    @media only screen and (max-width: $smallDisplay) {
-        font-size: 18px;
-    }
-    &:focus {
-        outline: none;
-        box-shadow: none
-    }
-}
-.primary {
-    background: $primaryColor;
-    color: $titleColor;
-}
-.secondary {
-    background: $secondaryColor;
-    &:hover {
-        background-color: $primaryColor;
-    }
-}
 .white {
-    background: #fff;
-    color: $primaryColor;
-    border: 1px solid $titleColor;
-    &:hover {
-        background-color: $primaryColor;
-        color: #fff;
-    }
+  font-weight: bold;
+  font-size: 16px;
+  padding: 15px 30px;
+  margin: 0;
+  min-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  position: relative;
+  border-radius: 10px;
+  @media only screen and (max-width: $largeDisplay) {
+    font-size: 18px;
+  }
+  @media only screen and (max-width: $smallDisplay) {
+    font-size: 18px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none
+  }
+}
+
+.primary {
+  background: $primaryColor;
+  color: $titleColor;
+}
+
+.secondary {
+  background: $secondaryColor;
+
+  &:hover {
+    background-color: $primaryColor;
+  }
+}
+
+.white {
+  background: #fff;
+  color: $primaryColor;
+  border: 1px solid $titleColor;
+
+  &:hover {
+    background-color: $primaryColor;
+    color: #fff;
+  }
 }
 
 .blank {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
 }
 
 .noPadding {
-    font-size: 18px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    &:focus {
-        outline: none;
-        box-shadow: none;
-    }
+  font-size: 18px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 .small {
-    padding: 5px;
-    cursor: pointer;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .noPadding {
-    padding: 0;
-    z-index: 1;
+  padding: 0;
+  z-index: 1;
 }
 
-.full{
-    width: 100%;
+.full {
+  width: 100%;
 }
 
 .link {
-    text-decoration: none;
-    @media only screen and (max-width: $smallDisplay) {
-        font-size: 12px;
-    }
-    &:focus {
-        outline: none;
-        box-shadow: none
-    }
+  text-decoration: none;
+  @media only screen and (max-width: $smallDisplay) {
+    font-size: 12px;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none
+  }
+}
+
+.disable {
+  background-color: #c9c9c9;
+  color: #8b8b8b;
 }

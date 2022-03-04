@@ -1,0 +1,70 @@
+@import "src/variables";
+
+.options {
+  max-width: 50rem;
+  padding: 0 2.4rem 0 0;
+  display: flex;
+  height: 25px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.radio {
+  display: none;
+
+  & + .label {
+    position: relative;
+    display: flex;
+    height: 25px;
+    align-items: center;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      border-radius: 30px;
+      border: 2px solid $primaryColor;
+    }
+  }
+
+  &:checked {
+    & + .label {
+      background-image: none;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        background-color: $primaryColor;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 30px;
+        background-color: $titleColor;
+        left: 7px;
+        top: 8px;
+      }
+
+      & > .labelText {
+        color: $titleColor;
+      }
+    }
+  }
+}
+
+.labelText {
+  padding-left: 1.9rem;
+  font-size: 15px;
+  color: $titleColor;
+  transition: color 0.2s;
+  cursor: pointer;
+}

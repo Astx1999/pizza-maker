@@ -1,7 +1,7 @@
 @import "src/variables";
 .root{
   box-shadow: $boxShadow;
-  border-radius: 25px;
+  border-radius: 15px;
   padding: 0 30px 30px;
   background-color: #fff;
   @media only screen and (max-width: $largerDisplay) {
@@ -55,7 +55,7 @@
   width: 50%;
   margin-right: 15px;
   background-color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
   color: $titleColor;
